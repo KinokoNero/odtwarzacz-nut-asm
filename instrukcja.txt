@@ -1,0 +1,18 @@
+Plik z nutami, który program może odtworzyć składa się z:
+- Nazwy nuty (np. C,F,H...)
+- informacji czy dana nuta jest półtonem czy nie
+- numerem oktawy
+- informacją czy dana nuta jest nutą całą, półnutą, ćwierćnutą czy ósemką
+
+Plik zawierający nuty powinien wyglądać następująco:
+[nazwa nuty][cały ton/półton][oktawa][półnuta/ćwierćnuta/ósemka][...]
+
+*nazwa nuty : litera nuty (C,D,E,F,G,A,H)
+*cały ton/półton : jeśli cały ton wstaw 'SPACJĘ', jeśli półton wstaw '#'
+*oktawa : numer oktawy (1,2,3,...)
+*półnuta/ćwierćnuta/ósemka : jeśli cała nuta wstaw '1', jeśli półnuta wstaw '2', jeśli ćwierćnuta wstaw '4', jeśli ósemka wstaw '8'
+
+Przykładowy ciąg znaków:
+C#24A 58H#12
+
+Ważne jest aby między każdą nutą nie było przerwy (spacji). Spacja może wystąpić tylko w miejscu decydującym czy nuta jest półtonem czy nie.
